@@ -73,10 +73,15 @@ WSGI_APPLICATION = 'api.wsgi.app'
 # -- eliminar al deployar y cambiar a posgress -- 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dario_box',
+        'USER': 'dario_box_user',
+        'PASSWORD': 'zsduLAbLxXzmBYvc29jHXlNibiaqhcgs',
+        'HOST': 'dpg-ctfjr6pu0jms739novcg-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
